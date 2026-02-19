@@ -263,6 +263,12 @@ services:
     command: "services.payments.server.http"
     container_name: "http-payments"
 
+  grpc-payments:
+    <<: *python-service
+    ports: [ "9007:9007" ]
+    command: "services.payments.server.grpc"
+    container_name: "grpc-payments"
+
 
 volumes:
   pgdata:
