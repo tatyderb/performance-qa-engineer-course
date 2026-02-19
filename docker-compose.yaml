@@ -3,7 +3,7 @@ version: '3.9'
 x-base-service: &base-service
   image: base-service
   volumes:
-    - .:/app
+    - .:/app:z
   working_dir: /app
   environment:
     ENV_FILE: .env
