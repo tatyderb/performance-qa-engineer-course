@@ -256,6 +256,14 @@ services:
     command: "services.operations.server.grpc"
     container_name: "grpc-operations"
 
+  # payments-service
+  http-payments:
+    <<: *python-service
+    ports: [ "8007:8007" ]
+    command: "services.payments.server.http"
+    container_name: "http-payments"
+
+
 volumes:
   pgdata:
   grafana-data:
