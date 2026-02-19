@@ -1,0 +1,8 @@
+{
+  "payment": {
+    "id": "2e4d30b2-2b89-46ac-97b6-be7ef92c81a8",
+    "status": "CAPTURED",
+    "system": "MASTERCARD",
+    "message": "success"
+  }
+}
