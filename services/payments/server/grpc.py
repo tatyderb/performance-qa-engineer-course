@@ -18,7 +18,7 @@ from libs.grpc.server.interceptors.logger_interceptor import GRPCLoggerIntercept
 from libs.grpc.server.interceptors.exception_interceptor import GRPCExceptionInterceptor
 
 async def serve():
-    logger = get_logger("MOCK_SERVICE_GRPC_SERVER")
+    logger = get_logger("MOCK_PAYMENT_SERVICE_GRPC_SERVER")
     server = build_grpc_server(settings.mock_grpc_server, logger)
 
     payments_service_pb2_grpc.add_PaymentsServiceServicer_to_server(PaymentsMockService(), server)
