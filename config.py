@@ -39,6 +39,7 @@ class Settings(BaseSettings):
 
     payments_http_client: HTTPClientConfig
     payments_grpc_client: GRPCClientConfig
+    payments_grpc_server: GRPCServerConfig
     payments_system_enabled: bool
 
     accounts_http_server: HTTPServerConfig
